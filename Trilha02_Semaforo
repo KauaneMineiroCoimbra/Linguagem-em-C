@@ -1,0 +1,22 @@
+// 2. Semaforo
+//----------------------------------------------------------------
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char cor[20];
+
+    printf("Digite a cor do semaforo: ");
+    scanf("%s", cor);
+
+    if (strcmp(cor, "Vermelho") == 0) {
+        printf("Espere");
+    } else if (strcmp(cor, "Verde") == 0) {
+        printf("Atravesse");
+    } else {
+        printf("Farol inoperante");
+    }
+
+    return 0;
+}
